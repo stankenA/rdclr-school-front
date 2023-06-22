@@ -1,0 +1,13 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+@import url(./utils/variables.css);
+
+@import url(./blocks/common/txt.css);
+@import url(./blocks/common/link.css);
+@import url(./blocks/common/list.css);
+
+@import url(./blocks/page.css);
+@import url(./blocks/header.css);
+@import url(./blocks/aside.css);
+@import url(./blocks/main.css);
+@import url(./blocks/about.css);

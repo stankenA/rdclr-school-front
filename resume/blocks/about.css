@@ -1,0 +1,129 @@
+.about {
+  width: 100%;
+}
+
+.about__promo {
+  max-width: 690px;
+  margin-top: 19px;
+  margin-bottom: 30px;
+}
+
+.about__promo-txt {
+  margin-bottom: 30px;
+}
+
+.about__promo-list {
+  margin-bottom: 30px;
+}
+
+.about__container {
+  width: 100%;
+  border: 1px solid var(--color-white);
+  min-height: 658px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 41px 49px 41px 27px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__arrow {
+  background: url(../images/white-arrow.svg) no-repeat center / cover;
+  display: block;
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  top: -1px;
+  left: 56px;
+}
+
+.about__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 74px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255 255 255 / 40%);
+}
+
+.about__block:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about__block-title {
+  width: 124px;
+  margin: 0;
+}
+
+.about__list {
+  margin-top: 6px;
+}
+
+.about__item {
+  margin-bottom: 8px;
+}
+
+.about__item:last-child {
+  margin-bottom: 0;
+}
+
+.about__skills-list {
+  width: 78%;
+  margin-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  row-gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .about__promo-txt {
+    margin-bottom: 24px;
+  }
+
+  .about__arrow {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .about__container {
+    padding: 40px 15px 30px;
+  }
+
+  .about__block-title {
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  .about__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 24px;
+  }
+
+  .about__skills-list {
+    gap: 16px;
+  }
+}

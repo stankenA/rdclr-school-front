@@ -1,0 +1,335 @@
+.page {
+    background-color: rgb(0, 184, 184);
+    font-family: Montserrat, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 80px;
+    min-height: 100vh;
+    font-weight: 400;
+    color: #fff;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pomodoro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pomodoro__block {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 500px;
+    min-height: 312px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pomodoro__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.pomodoro__button {
+    width: 120px;
+    height: 34px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.pomodoro__button_active {
+    background-color: #00000025;
+}
+
+.pomodoro__timer {
+    font-size: 120px;
+    font-weight: 700;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pomodoro__control {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.pomodoro__start {
+    width: 70%;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px;
+    box-shadow: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(2, 107, 107);
+}
+
+.pomodoro__reset {
+    width: 25%;
+    height: 60px;
+    background-color: rgb(179, 0, 0);
+    border-radius: 5px;
+    -webkit-box-shadow: 5px;
+    box-shadow: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+
+.pomodoro__tasks {
+    width: 100%;
+    background-color: #242020;
+    min-height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pomodoro__tasks-title {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.pomodoro__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+}
+
+.pomodoro__item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #004a60;
+    padding: 5px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pomodoro__item-txt {
+    margin: 0;
+    font-size: 16px;
+    max-width: 80%;
+}
+
+.pomodoro__complete {
+    color: #1e9e4f;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #1e9e4f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.pomodoro__delete {
+    color: #b42121;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #b42121;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.pomodoro__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pomodoro__task-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+}
+
+.pomodoro__add-new-task {
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #004a60;
+    color: #004a60;
+    font-size: 24px;
+    background-color: transparent;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.pomodoro__add {
+    background-color: rgba(0, 0, 0, 0.11);
+    width: 500px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pomodoro__popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(201, 160, 83);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.pomodoro__popup_opened {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.pomodoro__popup-form {
+    width: 96%;
+    background-color: #292929;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pomodoro__input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.pomodoro__timesetter {
+    width: 40%;
+    background-color: #fff;
+    color: black;
+    font-size: 24px;
+    margin: 20px auto 0;
+}
+
+.pomodoro__open-popup {
+    position: absolute;
+    top: 21px;
+    right: 22px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(./Cog.svg) no-repeat center / cover;
+}

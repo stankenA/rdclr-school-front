@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Unbounded:wght@200;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="page">
+    <header class="header">
+        <a href="https://github.com/stankenA" class="header__link">
+            Pomodoro by: stankenA
+        </a>
+    </header>
+    <section class="pomodoro">
+        <div class="pomodoro__block">
+            <div class="pomodoro__buttons">
+                <button type="button" class="pomodoro__button pomodoro__button_main pomodoro__button_active button">
+                    Pomodoro
+                </button>
+                <button type="button" class="pomodoro__button pomodoro__button_short button">
+                    Short break
+                </button>
+                <button type="button" class="pomodoro__button pomodoro__button_long button">
+                    Long break
+                </button>
+            </div>
+            <div class="pomodoro__timer">
+                <span class="pomodoro__minutes">25</span>:<span class="pomodoro__seconds">00</span>
+            </div>
+            <div class="pomodoro__control">
+                <button class="pomodoro__start button">Start</button>
+                <button class="pomodoro__reset button">
+                    Reset
+                </button>
+            </div>
+            <div class="pomodoro__tasks">
+                <h2 class="pomodoro__tasks-title">
+                    Tasks
+                </h2>
+                <ul class="pomodoro__list">
+                    <li class="pomodoro__item">
+                        <p class="pomodoro__item-txt">
+                            Do this
+                        </p>
+                        <div class="pomodoro__task-btns">
+                            <button class="pomodoro__complete button">&#10003;</button>
+                            <button class="pomodoro__delete button">&#10007;</button>
+                        </div>
+                    </li>
+                </ul>
+                <button class="pomodoro__add-new-task">+</button>
+            </div>
+            <div class="pomodoro__popup">
+                <form class="pomodoro__popup-form">
+                    <label class="pomodoro__label">Work time</label>
+                    <input type="number" placeholder="Work time" class="pomodoro__input pomodoro__input_main"
+                        value="25">
+                    <label class="pomodoro__label">Short rest time</label>
+                    <input type="number" placeholder="Short rest time" class="pomodoro__input pomodoro__input_short"
+                        value="5">
+                    <label class="pomodoro__label">Long rest time</label>
+                    <input type="number" placeholder="Long rest time" class="pomodoro__input pomodoro__input_long"
+                        value="15">
+                    <button type="button" class="pomodoro__timesetter button">Set</button>
+                </form>
+            </div>
+            <button class="pomodoro__open-popup button"></button>
+        </div>
+        <button class="pomodoro__add button">
+            Add more Pomodoro
+        </button>
+    </section>
+    <script type="module" defer src="./index.js"></script>
+</body>
+
+</html>

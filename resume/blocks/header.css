@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.header__link {
+  position: absolute;
+  bottom: -17px;
+  right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    min-height: unset;
+    width: 322px;
+    margin: 0 auto 48px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .header__link {
+    position: static;
+  }
+}
